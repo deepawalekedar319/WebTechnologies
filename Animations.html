@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+
+        #d1{
+            width: 20%;
+            height: 30%;
+            background-color: bisque;
+            font-size: 12px;
+            transition: width 1s,font-size 1s,background-color 2s;
+        }
+        #d1:hover{
+            width: 30%;
+            font-size: 20px;
+            background-color: red;
+        }
+        #d2{
+            width: 20%;
+            height: 30%;
+            color:aliceblue;
+            background-color: blue;
+            animation: moveDown 1s linear 1;
+        }
+        @keyframes moveDowm {
+            0%{
+                transform: translateY(-100px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="d1">
+        <h1>Kedar Singh </h1>
+    </div>
+    <div id="d2">    
+        <h1>HTML, CSS, JS</h1>
+    </div>    
+</body>
+</html>
